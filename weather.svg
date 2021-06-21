@@ -1,0 +1,6 @@
+<svg aria-hidden="true" class="" height="100px" width="100px" 
+set="weather" skycode="30" theme="full" name="" 
+data-testid="Icon" role="img" viewBox="0 0 200 200">
+<title>Partly Cloudy</title>
+<use xlink:href="#svg-symbol-sun" transform="matrix(.56 0 0 .56 0 16.8)" mask="url(#partly-cloudy-mask)"></use>
+<use xlink:href="#svg-symbol-cloud" transform="translate(0 -10)"></use></svg>

@@ -1,0 +1,50 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/css/mystyles.css" />
+  </head>
+  <body class="gradient">
+
+    {{>header}}
+
+    <p class="help_title">{{title}}</p>
+    <div class="about_container">
+      <div>
+        <ol>
+          <li class="about_text">Esta aplicación hace uso de la API de Weatherstack</li>
+          <li class="about_text">En primer lugar se debe elegir la ciudad de la que se desea saber el clima.</li>
+          <li class="about_text">Se muestra el resultado con el clima</li>
+        </ol>
+      </div>
+      <div>
+        <img class="about_img" src="img/weatherstack-forecast.gif" alt="">
+      </div>
+    </div>
+    <div class="help_cont">
+      <div class="help_container">
+        <p class="help_text">En caso de que la aplicación no genere el reporte del clima de forma correcta, por favor recargue la página e inténtelo nuevamente</p>
+        <div>
+          <img class="help_img" src="img/reload.gif" alt="">
+        </div>
+      </div>
+      <div class="help_container help_container_2">
+        <p class="help_text">Si aún no funciona, asegúrese de escribir bien el nombre de la ciudad que desea buscar</p>
+        <div>
+          <img class="help_img" src="img/check.gif" alt="">
+        </div>
+      </div>
+      <div class="help_container help_container_3">
+        <p class="help_text">Si el problema persiste comuníquese con weatherapp@gmail.com </p>
+        <div>
+          <img class="help_img" src="img/call.gif" alt="">
+        </div>      
+      </div>
+    </div>
+    
+    {{>footer}}
+
+  </body>
+</html>

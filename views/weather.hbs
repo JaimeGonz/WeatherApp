@@ -1,0 +1,65 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/css/mystyles.css" />
+    <script src="/js/script.js" defer></script>
+  </head>
+  <body class="gradient">
+
+    {{>header}}
+
+    <div class="city">
+
+    </div>
+
+    <div class="options">
+      <div class="field is-grouped options_links">
+        {{!-- <a class="navbar-item" href="">Hora</a>
+        <a class="navbar-item" href="">Día</a>
+        <a class="navbar-item" href="">Semana</a>
+        <a class="navbar-item" href="">Mes</a> --}}
+      </div>
+    </div>
+    
+    <div class="search_container">
+      <input class="input search_input" type="text" placeholder="Buscar ciudad"> 
+      <?xml version="1.0" ?>
+        <svg class="search_icon" height="512px" fill="#fff" id="Layer_1" style="enable-background:new 0 0 512 512;" 
+        version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" 
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <path d="M344.5,298c15-23.6,23.8-51.6,23.8-81.7c0-84.1-68.1-152.3-152.1-152.3C132.1,64,64,132.2,64,216.3  c0,84.1,68.1,152.3,152.1,152.3c30.5,0,58.9-9,82.7-24.4l6.9-4.8L414.3,448l33.7-34.3L339.5,305.1L344.5,298z M301.4,131.2  c22.7,22.7,35.2,52.9,35.2,85c0,32.1-12.5,62.3-35.2,85c-22.7,22.7-52.9,35.2-85,35.2c-32.1,0-62.3-12.5-85-35.2  c-22.7-22.7-35.2-52.9-35.2-85c0-32.1,12.5-62.3,35.2-85c22.7-22.7,52.9-35.2,85-35.2C248.5,96,278.7,108.5,301.4,131.2z"/></svg>
+      <button id="submit" class="button">Search</button>
+    </div>
+
+    <section class="card">
+      <div>
+        <h1 id="location" class="card_city">Tiempo en Colima, Colima</h1>
+        <div class="card_time">Hora: 14:59 ET</div>
+      </div>
+      <div class="weather">
+        <div>
+          <span id="temperature" class="card_temp">32°</span>
+          <div id="weather_description" class="card_cond">Parcialmente nublado</div>
+        </div>
+        <div>
+          <img id="img_weather" class="size">
+        </div>
+      </div>
+      <div>
+        <p id="feelslike" class="card_prob">Real Feel 28°</p>
+        <span id="precip" class="card_prob">3% de probabilidad de lluvia</span>
+      </div>
+    </section>
+
+    <p id="message_1"></p>
+    <p id="message_2"></p>
+    <p id="message_3"></p>
+    <p id="message_4"></p>
+    
+    {{>footer}}
+
+  </body>
+</html>

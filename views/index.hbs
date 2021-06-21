@@ -1,0 +1,29 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/css/mystyles.css" />
+  </head>
+  <body class="gradient">
+
+    {{>header}}
+
+    <div class="index_container">
+      <div>
+        <p class="index_que-es">¿Qué es {{title}}?</p>
+        <p class="index_def">El clima cambia constantemente, y es difícil encontrar el último pronóstico del tiempo, pero con la aplicación web Weather App, es fácil y sencillo encontrar el pronóstico cuando lo desee y donde lo desee.</p>
+        {{!-- <p class="index_def">La aplicación muestra el pronóstico preciso para el día, semana o mes brindándole una idea de la temperatura, la velocidad del viento y mucho más. En cuestión de segundos, puede averiguar el pronóstico del tiempo en su ciudad local, con representaciones visuales de las próximas condiciones.</p> --}}
+        <p class="index_def">En cuestión de segundos, puede averiguar el pronóstico del tiempo en su ciudad local, con representaciones visuales de las próximas condiciones.</p>
+      </div>
+
+      <div>
+        <img class="index_img" src="img/weather-bg.png" alt="">
+      </div>
+    </div>
+    
+    {{>footer}}
+
+  </body>
+</html>
